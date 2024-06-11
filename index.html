@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="div-nav container flex">
+               <ul class="flex">
+                <li> 
+                    <a href="#" class="logo"><img src="./assets/news-broadcast-svgrepo-com.svg" alt="logo" style="width: 35px; height: 35px;"></a></li>
+                <li><h3 class="heading" style="margin-left: 8px;">World News</h3></li>
+               </ul>     
+        
+
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            </ul>
+        </div>
+
+        <div class="search-bar flex">
+            <input type="text" id="search-text" class="news-input" placeholder="e.g. Science">
+            <button id="search-btn" class="search-button">Search</button>
+        </div>
+       
+    </div>
+    </nav>
+
+    <main>
+        <div  id="cards-container"    class="cards-container flex container">
+           
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" id="card-img" alt="cards">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 23/08/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus animi et quas. Iste nam repudiandae, nobis labore, omnis dolor similique perspiciatis animi mollitia reprehenderit incidunt suscipit fuga officiis! Praesentium, ipsa.</p>
+               <center> <button class="read-more">Read more</button></center>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
